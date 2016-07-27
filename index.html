@@ -2,6 +2,8 @@
 <html>
 
 <head>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="libs/css/bootstrap.min.css" />
     <link rel="stylesheet" href="libs/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href- "style.css"/>
@@ -11,7 +13,7 @@
 
 </head>
 
-<body height="100%">
+<body>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -24,25 +26,25 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="img/banner-picture-1.jpg" width="100%" height="100%">
+                <img src="img/banner-picture-1.jpg">
                 <!-- <div class="carousel-caption">
                     ...
                 </div> -->
             </div>
             <div class="item">
-                <img src="img/banner-picture-2.jpg" width="100%" height="100%">
+                <img src="img/banner-picture-2.jpg">
                 <!-- <div class="carousel-caption">
                     ...
                 </div> -->
             </div>
             <div class="item">
-                <img src="img/banner-picture-3.jpg" width="100%" height="100%">
+                <img src="img/banner-picture-3.jpg">
                 <!-- <div class="carousel-caption">
                     ...
                 </div> -->
             </div>
             <div class="item">
-                <img src="img/banner-picture-4.jpg" width="100%" height="100%">
+                <img src="img/banner-picture-4.jpg">
                 <!-- <div class="carousel-caption">
                     ...
                 </div> -->
@@ -59,6 +61,12 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div id="whoAreWePanel">
+    </div>
+    <div id="whatWeProvidePanel">
+    </div>
+    <div id="contactUsPanel">
+    </div>
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -72,7 +80,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Who Are We</a></li>
+                    <li><a onclick="showWAE()">Who Are We</a></li>
                     <li><a href="#">What We Provide</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
@@ -82,6 +90,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="libs/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </body>
 
 </html>
