@@ -1,4 +1,27 @@
-var showWAE = function() {
-    console.log("function called");
-    $('.carousel').hide('slide', {direction: 'left'}, 1000);
+function showCarousel() {
+    $("#whoAreWe").hide();
+    $("#whatWeProvide").hide();
+    $("#contactUs").hide();
+    $("#carousel").show();
+}
+
+function showWAE() {
+    $("#carousel").hide();
+    $("#whatWeProvide").hide();
+    $("#contactUs").hide();
+    $("#whoAreWe").show();
+}
+
+function showWWP() {
+    $("#carousel").hide();
+    $("#contactUs").hide();
+    $("#whoAreWe").hide();
+    $("#whatWeProvide").show();
+}
+
+function showCU() {
+    $("#carousel").hide();
+    $("#whoAreWe").hide();
+    $("#whatWeProvide").hide();
+    $("#contactUs").show();
 }

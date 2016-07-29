@@ -13,64 +13,31 @@
 
 </head>
 
-<body>
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        </ol>
+<body onload="showCarousel()">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="img/banner-picture-1.jpg">
-                <!-- <div class="carousel-caption">
-                    ...
-                </div> -->
-            </div>
-            <div class="item">
-                <img src="img/banner-picture-2.jpg">
-                <!-- <div class="carousel-caption">
-                    ...
-                </div> -->
-            </div>
-            <div class="item">
-                <img src="img/banner-picture-3.jpg">
-                <!-- <div class="carousel-caption">
-                    ...
-                </div> -->
-            </div>
-            <div class="item">
-                <img src="img/banner-picture-4.jpg">
-                <!-- <div class="carousel-caption">
-                    ...
-                </div> -->
-            </div>
+    <div id="panelHolder">
+        <div id="carousel">
+            Carousel
         </div>
+        <div id="whoAreWe" style="display: none">
+            Zeal Cafe
+        </div>
+        <div id="whatWeProvide" style="display: none">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active"><a href="#">Coffee</a></li>
+                <li role="presentation"><a href="#">Tea</a></li>
+                <li role="presentation"><a href="#">Machine</a></li>
+            </ul>
+        </div>
+        <div id="contactUs" style="display: none">
+            Contact Info
+        </div>
+    </div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div id="whoAreWePanel">
-    </div>
-    <div id="whatWeProvidePanel">
-    </div>
-    <div id="contactUsPanel">
-    </div>
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" onclick="showCarousel()" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -81,12 +48,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a onclick="showWAE()">Who Are We</a></li>
-                    <li><a href="#">What We Provide</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a onclick="showWWP()" href="#">What We Provide</a></li>
+                    <li><a onclick="showCU()"href="#">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="libs/js/bootstrap.min.js"></script>
