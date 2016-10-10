@@ -111,21 +111,25 @@
     <!-- End : Reviews -->
     <div class="clearfix"></div>
     <!-- Start : Contaxt -->
-    <div id="contact">
-        <h1> Contact Us </h1>
-        <h3> Phone : 9181231102983 </h3>
-        <h3> Email : zealcafe_support@gmail.com </h3>
-    </div>
-    <!-- End : Contact -->
-    <!-- Footer -->
     <footer>
+        <div id="contact">
+            <h1> Contact Us </h1>
+            <h3> Phone : 9181231102983 </h3>
+            <h3> Email : zealcafe_support@gmail.com </h3>
+        </div>
         &copy; ZEALCAF&Eacute; 2016
         <div class="right">
             <a href="http://rhemon.github.io">rhemon</a>
         </div>
     </footer>
+    <!-- End : Contact -->
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        window.addEventListener("hashchange", function () {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+        });
+    </script>
 </body>
 
 </html>
