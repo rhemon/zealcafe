@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster_1.3.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+.navbar {
+    background-color: #bcaaa4;
+    border: 0;
+    border-bottom: 1px solid black;
+    color: #FFFF8D;
+    font-size: 1.5em;
+}
+
+.nav li:hover {
+    background-color: #8d6e63
+}
+#home {
+    width: 100%;
+    max-height: 100vh
+}
+#home>img {
+    min-width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    filter: blur(3px);
+    overflow: hidden;
+}
+#home-text {
+    position: absolute;
+    top: 25%;
+    margin: 0 4%
+}
+#home-text h1 {
+    color: #fefefe;
+    font-size: 9em;
+    letter-spacing: 4px
+}
+#home-text h3 {
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    text-align: right;
+    color: #FFFF8D;
+    font-family: "Lobster";
+}
+#about {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/mix.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: sans-serif;
+}
+#about h1 {
+    color: #F0F4C3;
+    text-align: center;
+    font-size: 5em;
+    margin: 0;
+    padding-top: 4%;
+    padding-bottom: 3%;
+    border: 0;
+}
+#about p  {
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 1.24em;
+    letter-spacing: 5%;
+}
+#about h3 {
+    color: #F0F4C3;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+.about-text {
+    padding-bottom: 4%;
+    letter-spacing: 2px;
+}
+#socials {
+    padding: 50px;
+    background-color: #F5F5F5;
+    margin: 0;
+    border: 0;
+}
+#products {
+    margin: 0;
+    background: #bcaaa4;
+}
+#products .product-section {
+    margin: 0 8%;
+    padding: 2% 0;
+    color: inherit;
+}
+#products .product-section h1 {
+    color: #F0F4C3;
+    padding: 2% 0;
+    text-align: center;
+    font-size: 5em
+}
+#products .product-section h2 {
+    font-size: 1.75em;
+    text-align: center;
+}
+#products .product-section p {
+    font-weight: normal;
+    font-size: 1.24em;
+    font-family: sans-serif;
+    text-align: justify;
+    padding-bottom: 4%
+}
+.middle {
+    display: block;
+    margin: 5%;
+}
+#contact {
+    background: #bcaaa4;
+    padding: 2% 8%;
+    padding-bottom: 4%
+}
+#contact h1 {
+    color: #F0F4C3;
+    font-size: 5em;
+    text-align: center
+}
+#contact h3 {
+    color: #F0F4C3;
+    font-size: 2em
+}
+footer {
+    border-top: 1px solid black;
+    padding: 15px;
+    width: 100%;
+    background-color: #bcaaa4;
+    font-size: 14px;
+    font-weight: bold
+}
+.right {
+    float: right
+}
+#reviews {
+    margin: 0 8%;
+    margin-top: 4%;
+    margin-bottom: 2%
+}
+#reviews .cycle-slideshow {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%
+}
+#reviews h1 {
+    font-size: 5em;
+    text-align: center;
+}
+.desc {
+    background-color: #000;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    font-size: 1.65em;
+    padding: 10px;
+    text-align: center
+}
+.fix {
+    width: 100%;
+    padding: 0
+}
+@media(max-width:767px) {
+    * {
+        max-width: 100%
+    }
+    #home-text h1 {
+        font-size: 4em
+    }
+    #home-text h3 {
+        font-size: 1.25em
+    }
+    #home>img {
+        height: auto;
+    }
+    #home-text {
+        top: 10%
+    }
+    #about h1 {
+        font-size: 2.5em
+    }
+    #about .about-text p {
+        font-size: 1em
+    }
+    #products .product-section {
+        margin: 0
+    }
+    #products .product-section h1 {
+        font-size: 2.5em
+    }
+    #products .product-section h2 {
+        font-size: 1.75em;
+        text-align: center
+    }
+    #products .product-section p {
+        font-size: 1em;
+        margin: 2%
+    }
+    #products .product-section .row {
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0
+    }
+    #reviews {
+        max-width: 100%;
+        margin: 0 2%;
+        margin-bottom: 2%
+    }
+    #reviews h1 {
+        font-size: 2.5em
+    }
+    #reviews .cycle-slideshow {
+        margin: 0;
+        width: 100%;
+        height: auto
+    }
+    .desc {
+        font-size: 1em
+    }
+    #contact h1 {
+        font-size: 2.5em
+    }
+    #contact h3 {
+        font-size: 1.25em
+    }
+    #market-contact{
+        margin-top: 20px;
+        text-align: left;
+    }
+}
